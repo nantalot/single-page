@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="NANTALOT, balades fluviales sur la Loire, l’Erdre et la Sèvre nantaise. Découvrez nos offres de navigations pour vos événements et moments inoubliables.">
     <title>NANTALOT - Balades fluviales</title>
+    
+    <!-- Link to favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,6 +21,14 @@
             color: white;
             text-align: center;
             padding: 10px 0;
+            position: relative;
+        }
+        /* Style for logo placement */
+        .logo {
+            position: absolute;
+            left: 20px;
+            top: 10px;
+            width: 80px;
         }
         .container {
             width: 80%;
@@ -46,22 +58,48 @@
         .contact a:hover {
             text-decoration: underline;
         }
+        /* Gallery styles */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 30%;
+            height: auto;
+            border: 2px solid #ddd;
+        }
+        /* Footer style */
         footer {
             text-align: center;
             padding: 20px;
             background-color: #333;
             color: white;
+            position: relative;
+        }
+        /* Banner for "Under Construction" notice */
+        .banner {
+            background-color: #f0ad4e;
+            color: #333;
+            padding: 10px;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
+<!-- Header section with a logo and title -->
 <header>
+    <img src="logo.jpg" alt="NANTALOT Logo" class="logo">
     <h1>NANTALOT - Balades Fluviales</h1>
     <p>Sur la Loire, l’Erdre et la Sèvre nantaise</p>
 </header>
 
 <div class="container">
+    <!-- Company description section -->
     <section>
         <h2>À propos de NANTALOT</h2>
         <p>
@@ -76,16 +114,35 @@
         </p>
     </section>
 
+    <!-- Contact section with email, phone, and social media link -->
     <section>
         <h2>Contactez-nous</h2>
         <div class="contact">
             <p><strong>Email :</strong> <a href="mailto:contact@nantalot.fr">contact@nantalot.fr</a></p>
-            <p><strong>Téléphone :</strong> <a href="tel:+33240404040">02 40 40 40 40</a></p>
+            <p><strong>Téléphone :</strong> <a href="tel:+33784152703">07 84 15 27 03</a></p>
             <p><strong>Instagram :</strong> <a href="https://www.instagram.com/nantalot44/" target="_blank">@nantalot44</a></p>
         </div>
     </section>
+
+    <!-- Photo gallery with 10 images -->
+    <section>
+        <h2>Galerie Photos</h2>
+        <div class="gallery">
+            <img src="img/photo1.jpg" alt="Bateau NANTALOT">
+            <img src="img/photo2.jpg" alt="Vue depuis le bateau">
+            <img src="img/photo3.jpg" alt="Passagers à bord">
+        </div>
+    </section>
+
+    <!-- "Under construction" banner -->
+    <div class="banner">
+        Ce site est actuellement en construction.<br>
+		Plus d'informations seront bientôt disponibles.<br>
+		N'hésitez pas à nous contacter pour toute question ou demande.
+    </div>
 </div>
 
+<!-- Footer with copyright information -->
 <footer>
     <p>&copy; 2024 NANTALOT - Balades fluviales sur la Loire, l'Erdre et la Sèvre nantaise</p>
 </footer>
